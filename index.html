@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Billetterie</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1 class="text-center">Billetterie sans VueJS</h1>
+    </header>
+    
+    <main class="container">
+        <h2>Achat de billets</h1>
+        <form>
+            <fieldset>
+                <legend>Choix du concert</legend>
+                <div class="form-group">
+                    <label for="concerts">Choisissez le concert souhaité</label>
+                    <select name="concerts" id="concerts" class="form-control">
+                    
+                    </select>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Choix des billets</legend>
+                <div class="form-group">
+                    <label for="normal-price">Billets au tarif normal (<span>xxxx</span>€)</label>
+                    <input name="normal_price" id="normal-price" type="number" class="form-control" value="0" min="0">
+                </div>
+                <div class="form-group">
+                    <label for="reduced-price">Billets au tarif réduit (<span>xxxx</span>€)</label>
+                    <input name="reduced_price" id="reduced-price" type="number" class="form-control" value="0" min="0">
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Récapitulatif de la commande</legend>
+                <p>Total TTC : <span id="total">0</span>€</p>
+            </fieldset>
+            <button class="button button-primary" disabled>Valider la commande</button>
+        </form>
+    </main>
+</body>
+</html>
